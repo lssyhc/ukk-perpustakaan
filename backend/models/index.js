@@ -21,6 +21,5 @@ db.sequelize = sequelize;
 
 // definisikan semua model yang ada pada aplikasi
 db.bukus = require('./Buku')(sequelize, Sequelize);
-db.users = require('./User')(sequelize, Sequelize);
 
 module.exports = db;
