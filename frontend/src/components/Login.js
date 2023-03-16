@@ -6,8 +6,8 @@ const Login = () => {
   const navigate = useNavigate();
 
   function checkLogin() {
-    const email = document.querySelector(".email").value;
-    const password = document.querySelector(".password").value;
+    const email = document.querySelector(".main-login .container-login .login .email").value;
+    const password = document.querySelector(".main-login .container-login .login .password").value;
 
     if (email !== "admin@gmail.com" || password !== "admin123") {
       return;
@@ -18,7 +18,7 @@ const Login = () => {
 
   return (
     <main className="main-login">
-      <div className="container">
+      <div className="container-login">
         <input type="checkbox" id="check" />
         <div className="login form">
           <header>Masuk</header>
